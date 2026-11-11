@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 56">
+<g transform="scale(.56)">
+  <rect width="100" height="100" rx="20" fill="#0b1d16"/>
+  <path d="M27 19h36l14 14v42c0 4-3 6-6 6H27c-4 0-6-2-6-6V25c0-4 2-6 6-6Z" fill="#fbfaf6"/>
+  <path d="M63 20v9c0 3 2 5 5 5h9" fill="#0b1d16"/>
+  <rect x="28" y="30" width="29" height="4" rx="2" fill="#4e6d2d"/>
+  <rect x="28" y="40" width="45" height="3.2" rx="1.6" fill="#a9c19a"/>
+  <rect x="28" y="47" width="45" height="3.2" rx="1.6" fill="#a9c19a"/>
+  <path d="m30 73 13.5-9.5L56 69l13.5-11" fill="none" stroke="#506d2d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  <circle cx="30" cy="73" r="2.7" fill="#506d2d"/>
+  <circle cx="43.5" cy="63.5" r="2.7" fill="#506d2d"/>
+  <circle cx="56" cy="69" r="2.7" fill="#506d2d"/>
+  <circle cx="69.5" cy="58" r="2.7" fill="#66ed00"/>
+</g>
+<text x="72" y="28" dominant-baseline="central" font-size="28" font-weight="700" letter-spacing="-0.5" font-family="SF Mono, ui-monospace, Menlo, Consolas, monospace" fill="#e6edf3">Edgar<tspan fill="#3ddc97">Stack</tspan></text>
+</svg>
