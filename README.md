@@ -100,6 +100,7 @@ Full guides for each client: [edgarstack.com/setup](https://edgarstack.com/setup
 - "Show Apple's last five years of revenue and operating income, with the filing each figure came from."
 - "Compare Apple, Microsoft and Nvidia on revenue growth and operating margin."
 - "What changed in Nvidia's Risk Factors between its last two 10-Ks?"
+- "Break down Microsoft's revenue and operating income by segment for the last five years."
 - "Build a five-year Excel model for Apple."
 - "Has management delivered on the guidance it gave last year?"
 
@@ -107,14 +108,14 @@ Full guides for each client: [edgarstack.com/setup](https://edgarstack.com/setup
 
 | Area | Tools |
 |---|---|
-| Financial statements | `get_financials`, `company_snapshot`, `compute_ratios`, `assess_financial_data_quality` |
+| Financial statements | `get_financials`, `get_segment_breakdown`, `company_snapshot`, `compute_ratios`, `assess_financial_data_quality` |
 | Analysis | `analyze_capital_allocation`, `analyze_earnings_quality`, `management_guidance_tracker`, `off_balance_sheet` |
 | Comparison and screening | `peer_compare`, `screen_companies` |
 | Filings | `lookup_company`, `list_recent_filings`, `get_filing_section`, `diff_filing_sections`, `full_text_search` |
 | Market and ownership | `get_valuation`, `get_price_history`, `get_insider_activity`, `institutional_ownership` |
 | Output | `build_financial_model` (Excel with live formulas), `manage_watchlist` |
 
-20 tools are read-only; `manage_watchlist` saves your own watchlist.
+22 tools; 21 are read-only and `manage_watchlist` saves your own watchlist.
 
 ## How accurate is it?
 
