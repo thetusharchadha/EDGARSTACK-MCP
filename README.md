@@ -23,6 +23,12 @@ EdgarStack: $478,834M  ·  FY2026, period ended 2026-09-26
 
 > **Free beta until 31 December 2026.** [Request a key](https://edgarstack.com/beta?utm_source=github&utm_medium=readme&utm_campaign=edgarstack_mcp); approval is automatic.
 
+## Watch it build
+
+One prompt in Claude → a 16-sheet Excel model of Apple, built from its 10-K filings (36 seconds, sound on).
+
+<p align="center"><a href="assets/edgarstack-skeleton-model.mp4"><img src="assets/edgarstack-skeleton-model-poster.jpg" alt="Play: EdgarStack builds a 16-sheet Apple financial model from SEC filings" width="320"></a></p>
+
 ## Quick start
 
 Server URL (OAuth sign-in with your beta key):
