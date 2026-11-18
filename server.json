@@ -2,9 +2,13 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.edgarstack/edgarstack",
   "title": "EdgarStack",
-  "description": "SEC EDGAR financials, ratios, peer comps, filing diffs and Excel models. Free beta to 31 Dec 2026.",
+  "description": "SEC EDGAR financials, ratios, filing diffs and Excel skeleton models for AI assistants.",
   "version": "1.1.0",
   "websiteUrl": "https://edgarstack.com",
+  "repository": {
+    "url": "https://github.com/thetusharchadha/EDGARSTACK-MCP",
+    "source": "github"
+  },
   "icons": [
     {
       "src": "https://edgarstack.com/logo-mark.svg",
@@ -17,7 +21,15 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://edgarstack.com/mcp"
+      "url": "https://edgarstack.com/mcp",
+      "headers": [
+        {
+          "name": "X-API-Key",
+          "description": "Your EdgarStack API key (efm_live_...). Free beta keys until 31 December 2026: request one at https://edgarstack.com/beta. OAuth also works: paste the key on the authorize page.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
     },
     {
       "type": "streamable-http",
