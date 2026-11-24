@@ -1,12 +1,16 @@
 <p align="center"><a href="https://edgarstack.com/?utm_source=github&utm_medium=readme&utm_campaign=edgarstack_mcp"><img src="assets/logo.svg" alt="EdgarStack" width="260"></a></p>
 
+<p align="center"><img src="assets/edgarstack-demo.gif" alt="EdgarStack builds an Apple financial model in Claude: standardized statements, five years of history, every cell linked to its 10-K" width="320"></p>
+
 <h3 align="center">SEC EDGAR financials for your AI assistant.<br>Every reported figure comes with its XBRL tag, period end and filing link.</h3>
 
 <p align="center">
   <a href="https://edgarstack.com/beta?utm_source=github&utm_medium=readme&utm_campaign=edgarstack_mcp"><b>Get a free beta key</b></a> ·
   <a href="https://edgarstack.com/docs?utm_source=github&utm_medium=readme">Docs</a> ·
   <a href="https://edgarstack.com/methodology?utm_source=github&utm_medium=readme#accuracy">Accuracy check</a> ·
-  <a href="https://registry.modelcontextprotocol.io/v0/servers?search=edgarstack">MCP Registry</a>
+  <a href="https://registry.modelcontextprotocol.io/v0/servers?search=edgarstack">MCP Registry</a> ·
+  <a href="https://mcp.so/server/edgarstack">mcp.so</a> ·
+  <a href="https://glama.ai/mcp/connectors/com.edgarstack/edgar-stack">Glama</a>
 </p>
 
 ---
@@ -102,6 +106,43 @@ Put your key in the URL: `https://edgarstack.com/mcp/<your-api-key>`. Treat that
 Full guides for each client: [edgarstack.com/setup](https://edgarstack.com/setup?utm_source=github&utm_medium=readme).
 
 ## Try these prompts
+
+Two real answers, as EdgarStack returned them on 25 November 2026:
+
+<details open>
+<summary><b>"Show Apple's last five years of revenue and operating income, with the filing each figure came from."</b></summary>
+
+| Fiscal year | Revenue | Operating income | Source 10-K |
+|---|---:|---:|---|
+| FY2026 | $478,834M | $158,063M | [0000320193-26-000026](https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/0000320193-26-000026-index.htm) |
+| FY2025 | $416,161M | $133,050M | [0000320193-26-000026](https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/0000320193-26-000026-index.htm) |
+| FY2024 | $391,035M | $123,216M | [0000320193-26-000026](https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/0000320193-26-000026-index.htm) |
+| FY2023 | $383,285M | $114,301M | [0000320193-25-000079](https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/0000320193-25-000079-index.htm) |
+| FY2022 | $394,328M | $119,437M | [0000320193-24-000123](https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/0000320193-24-000123-index.htm) |
+
+XBRL tags: `RevenueFromContractWithCustomerExcludingAssessedTax`, `OperatingIncomeLoss`. Each year comes from the latest 10-K that reports it.
+</details>
+
+<details>
+<summary><b>"Compare net income with free cash flow for Microsoft, Alphabet, Meta and Amazon."</b></summary>
+
+Free cash flow here is operating cash flow minus purchases of property and equipment, both as tagged in XBRL.
+
+| Company | Year | Net income | Free cash flow | FCF per $1 of net income |
+|---|---|---:|---:|---:|
+| Microsoft | FY2020 | $44,281M | $45,234M | $1.02 |
+| Microsoft | FY2026 | $133,749M | $66,987M | $0.50 |
+| Alphabet | 2019 | $34,343M | $30,972M | $0.90 |
+| Alphabet | 2025 | $132,170M | $73,266M | $0.55 |
+| Meta | 2019 | $18,485M | $21,212M | $1.15 |
+| Meta | 2025 | $60,458M | $46,109M | $0.76 |
+| Amazon | 2019 | $11,588M | $21,653M | $1.87 |
+| Amazon | 2025 | $77,670M | $7,695M | $0.10 |
+
+AI capex is growing much faster than depreciation, so reported profit is running well ahead of cash. Sources: each company's 10-Ks, accession numbers returned with every value.
+</details>
+
+More to try:
 
 - "Show Apple's last five years of revenue and operating income, with the filing each figure came from."
 - "Compare Apple, Microsoft and Nvidia on revenue growth and operating margin."
